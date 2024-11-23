@@ -1,6 +1,6 @@
 
 
-const form = document.getElementById('Resume-form') as HTMLFormElement;
+const form= document.getElementById('Resume-form') as HTMLFormElement;
 const ResumedisplayElement = document.getElementById('resume-display') as HTMLDivElement;
 
 //Subission
@@ -20,24 +20,24 @@ form.addEventListener('submit',(event: Event)=>{
     //Generate the REsume
 
     const resumeHTML  = `
-     <h2><b>Resume</b></h2>
-     <h4>Profile picture</h4>
-    <img src="${profilepic.src}"alt="profile picture"/>
+     <h2><b> Editable Resume</b></h2>
+    
     <h3>Personal Information</h3>
-    <p><b>Name:</b>${Name}</p>
-     <p><b>Email:</b>${Email}</p>
-      <p><b>Phone:</b>${phone}</p>
-       <p><b>Cnic:</b>${CNIC}</p>
+
+    <p><b>Name:</b><span contenteditable="true">${Name}</span></p>
+     <p><b>Email:</b> <span contenteditable="true"${Email}</span></p>
+      <p><b>Phone:</b> <span contenteditable="true"${phone}</span></p>
+       <p><b>Cnic:</b> <span contenteditable="true"${CNIC}</span></p>
 
 
     <h3>Experience</h3>
-    <p>${Education}</p>
+    <p contenteditable="true">${Education}</p>
 
        <h3>Experience</h3>
-    <p>${Experience}</p>
+    <p contenteditable="true">${Experience}</p>
 
        <h3>Experience</h3>
-    <p>${Skills}</p>
+    <p contenteditable="true">${Skills}</p>
     `;
 
     //Display the generated Resume

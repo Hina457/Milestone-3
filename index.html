@@ -5,12 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Resume builder</title>
+    <title> Editable Resume builder</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="back">
-    <h1>Dynamic Resume Builder</h1>
+    <h1>Editable Resume Builder</h1>
     <form id ="Resume-form">
         <fieldset>
            <legend>
@@ -57,15 +57,17 @@
             </textarea>
             <label for="profilepic">Profile picture:</label>
             <input type="file" id="fileInput" accept="image/"><br>
-            <img id="profilepic" alt="profile picture">
+            <img id="profilepic" alt="profilepicture">
         </fieldset>
         
         <button type="submit"><b>Generate Resume</b></button>
     </form>
     <br>
-     <div id="resume-display">
 
+    <!-- Editable Resume -->
+     <div id="resume-display" contenteditable="true">
      </div>
+
      </div>
 
      <script src="script.js"></script>
